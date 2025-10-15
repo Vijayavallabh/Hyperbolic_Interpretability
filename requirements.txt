@@ -1,0 +1,10 @@
+ConfigArgParse
+matplotlib
+numpy
+scipy
+tqdm
+umap-learn
+opencv-python
+grad-cam
+seaborn
+timm

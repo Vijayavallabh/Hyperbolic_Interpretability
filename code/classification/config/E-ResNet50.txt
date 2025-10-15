@@ -1,0 +1,34 @@
+# Output settings
+exp_name = E-ResNet50
+#output_dir = classification/output_100_topk_0.1
+
+# General settings
+#device = 'cuda:2'
+dtype = float32
+seed = 1
+#load_checkpoint = 
+
+# General training hyperparameters
+num_epochs = 300
+batch_size = 256
+lr = 1e-1
+weight_decay = 0.0005
+optimizer = SGD
+use_lr_scheduler = True
+
+# General validation/testing hyperparameters
+batch_size_test = 256
+
+# Model selection
+num_layers = 50
+embedding_dim = 512
+encoder_manifold = euclidean
+decoder_manifold = euclidean
+
+# Manifold settings
+# learn_k = True
+encoder_k = 1.0
+decoder_k = 1.0
+
+# Dataset settings
+dataset = CIFAR-100

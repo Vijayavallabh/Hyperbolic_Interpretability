@@ -1,0 +1,33 @@
+# python code/classification/train.py -c classification/config/E-ResNet18.txt
+
+# Output settings
+exp_name = E-ResNet34
+output_dir = classification/output_euclid_100_topk_0.01
+
+# General settings
+#device = cuda:0
+dtype = float32
+seed = 1
+#load_checkpoint = classification/output/E-ResNet18.pth
+
+# General training hyperparameters
+num_epochs = 200
+batch_size = 32
+lr = 1e-1
+weight_decay = 5e-4
+optimizer = SGD
+use_lr_scheduler = True
+
+
+# General validation/testing hyperparameters
+batch_size_test = 64
+
+# Model selection
+num_layers = 34
+embedding_dim = 512
+encoder_manifold = euclidean
+decoder_manifold = euclidean
+
+# Dataset settings
+dataset = CUB # CIFAR-10 or Tiny-ImageNet
+
